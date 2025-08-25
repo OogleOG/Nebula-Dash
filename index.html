@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Nebula Dash+ (v1.2)</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="ui">
+    <div id="topbar">
+      <div id="logo">NEBULA&nbsp;DASH<span class="plus">+</span></div>
+      <div class="pill">Score: <span id="scoreVal">0</span></div>
+      <div class="pill">Best: <span id="bestVal">0</span></div>
+      <button id="settingsBtn" class="icon" aria-label="Settings">⚙</button>
+    </div>
+
+    <div id="centerUI">
+      <div id="title">NEBULA DASH<span class="plus">+</span></div>
+      <div id="subtitle">Collect stars • Dodge meteors • Power up!</div>
+      <button id="startBtn" class="glass">Start</button>
+      <div id="hint">Move: ← → / A D / Drag • Pause: P • Start: Space/Enter</div>
+    </div>
+
+    <div id="overlay" class="hidden">
+      <div id="overlayBox">
+        <div id="overlayTitle">Paused</div>
+        <div id="overlayBody">
+          <p>Press P to resume</p>
+        </div>
+        <button id="resumeBtn" class="glass small">Resume</button>
+      </div>
+    </div>
+
+    <div id="settingsPanel" class="hidden">
+      <div class="panel">
+        <h3>Settings</h3>
+        <label class="row">
+          <input type="checkbox" id="toggleSfx" checked>
+          <span>Sound effects</span>
+        </label>
+        <label class="row">
+          <input type="checkbox" id="toggleVfx" checked>
+          <span>Screen shake</span>
+        </label>
+        <label class="row">
+          <input type="checkbox" id="toggleHighContrast">
+          <span>High-contrast mode</span>
+        </label>
+        <button id="closeSettings" class="glass small">Close</button>
+      </div>
+    </div>
+
+    <div id="mobileControls">
+      <button id="btnLeft" class="touchBtn">◀</button>
+      <button id="btnRight" class="touchBtn">▶</button>
+    </div>
+  </div>
+
+  <canvas id="game"></canvas>
+  <script src="game.js"></script>
+</body>
+</html>
