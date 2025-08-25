@@ -26,7 +26,7 @@ If hosted online (e.g., GitHub Pages, Vercel, Netlify), include the link here:
 
 Clone the repository:
 
-git clone https://github.com/your-username/nebula-dash.git
+git clone https://github.com/OogleOG/nebula-dash.git
 cd nebula-dash
 
 
