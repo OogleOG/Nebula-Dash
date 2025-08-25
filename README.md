@@ -83,5 +83,5 @@ This project is licensed under the MIT License – feel free to use and modify i
 
 🪐 Credits
 
-Developed by [Your Name] ✨
+Developed by Oogle ✨
 Inspired by classic arcade space dash games.
